@@ -1,0 +1,24 @@
+services:
+  - type: pserv
+    name: mysql
+    env: docker
+    plan: starter
+    autoDeploy: false
+
+    disk:
+      name: mysql-data
+      mountPath: /var/lib/mysql
+      sizeGB: 10
+
+    envVars:
+      - key: wQrZlJaNcaKKdhcfcKBFFtMbNWVDAWIs
+        generateValue: true
+
+      - key: MYSQL_DATABASE
+        value: railway
+
+      - key: MYSQL_USER
+        value: appuser
+
+      - key: MYSQL_PASSWORD
+        generateValue: true
