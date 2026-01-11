@@ -14,6 +14,9 @@ services:
       - key: wQrZlJaNcaKKdhcfcKBFFtMbNWVDAWIs
         generateValue: true
 
+      - key: MYSQL_ROOT_PASSWORD
+        generateValue: true
+
       - key: MYSQL_DATABASE
         value: railway
 
